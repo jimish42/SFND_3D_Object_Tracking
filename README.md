@@ -181,6 +181,8 @@ void computeTTCCamera(std::vector<cv::KeyPoint> &kptsPrev, std::vector<cv::KeyPo
 Find examples where the TTC estimate of the Lidar sensor does not seem plausible. Describe your observations and provide a sound argumentation why you think this happened.
 
 The TTC increases in some steps after it has decreased. This is not in line with the scene. This fluctuations can be based on the incorrect filtering of the the lidar points. 
+
+
 ![TTC_Results](TTC_results.jpg)
 
 
