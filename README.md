@@ -191,10 +191,10 @@ Run several detector / descriptor combinations and look at the differences in TT
 
 A similar problem to lidar is also observed in the TTC calculated using camera. See the attached graph.
 
+
 All the combinations of detector and descriptor were calculated and saved in ![all_combinations_cam_ttc.csv](all_combinations_cam_ttc.csv).
 
 In some combinations with HARRIS and ORB detectors the calculation of ttc resulted in inf or nans for some images.
 
 TTCs with SHITOMASI detectors were found to be consistant.
-
 
