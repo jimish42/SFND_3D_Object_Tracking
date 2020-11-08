@@ -181,10 +181,20 @@ void computeTTCCamera(std::vector<cv::KeyPoint> &kptsPrev, std::vector<cv::KeyPo
 Find examples where the TTC estimate of the Lidar sensor does not seem plausible. Describe your observations and provide a sound argumentation why you think this happened.
 
 The TTC increases in some steps after it has decreased. This is not in line with the scene. This fluctuations can be based on the incorrect filtering of the the lidar points. 
-![TTC_Results](TTC_Results.jpg)
+
+
+![TTC_Results](TTC_results.jpg)
 
 
 ### 6 Performance Evaluation 2
 Run several detector / descriptor combinations and look at the differences in TTC estimation. Find out which methods perform best and also include several examples where camera-based TTC estimation is way off. As with Lidar, describe your observations again and also look into potential reasons.
 
 A similar problem to lidar is also observed in the TTC calculated using camera. See the attached graph.
+
+All the combinations of detector and descriptor were calculated and saved in ![all_combinations_cam_ttc.csv](all_combinations_cam_ttc.csv).
+
+In some combinations with HARRIS and ORB detectors the calculation of ttc resulted in inf or nans for some images.
+
+TTCs with SHITOMASI detectors were found to be consistant.
+
+
